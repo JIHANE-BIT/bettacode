@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobRapido - Recherche d'Emploi</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">AlOmrane</div>
+        <nav>
+            <ul>
+                <li><a href="HOMERUN">HOME</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <h1>Trouver votre emploi idéal</h1>
+            <form id="searchForm">
+                <input type="text" id="jobTitle" placeholder="Intitulé du poste" required>
+                <input type="text" id="location" placeholder="Lieu" required>
+                <button type="submit">Rechercher</button>
+            </form>
+        </section>
+
+        <section class="job-listings">
+            <h2>Offres d'Emploi</h2>
+            <div id="jobResults"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 AlOmrane. Tous droits réservés.</p>
+    </footer>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #ff0000;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.search-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1a1a1a;
+}
+
+.search-section h1 {
+    margin-bottom: 20px;
+}
+
+.search-section form {
+    display: flex;
+    justify-content: center;
+}
+
+.search-section input {
+    padding: 10px;
+    margin: 0 10px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.job-listings {
+    padding: 20px;
+}
+
+.job {
+    background-color: #2a2a2a;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+}
+    </style>
+
+    <script> 
+    document.getElementById('searchForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const jobTitle = document.getElementById('jobTitle').value;
+    const location = document.getElementById('location').value;
+    
+    // Simuler une recherche d'emploi
+    const jobResults = document.getElementById('jobResults');
+    jobResults.innerHTML = `<p>Résultats pour "${jobTitle}" à "${location}":</p>`;
+    
+    // Exemple de résultats d'emploi
+    const jobs = [
+        { title: "Développeur Web", location: "Ouarzazate" },
+        { title: "Assistant Administratif", location: "Marrakech" },
+        { title: "Chef de Projet", location: "Casablanca" }
+    ];
+    
+    jobs.forEach(job => {
+        const jobElement = document.createElement('div');
+        jobElement.className = 'job';
+        jobElement.innerHTML = `<strong>${job.title}</strong> - ${job.location}`;
+        jobResults.appendChild(jobElement);
+    });
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlOmrane Immobilier - Accueil & Offres d'Emploi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <img src="https://imgur.com/H43q0jB.png" alt="Logo" class="small-logo">
+                <h2 class="logo">AlOmrane</h2>
+              
+            </div>
+                                   <!-- menu -->
+            <div class="menu">
+                <ul>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="CONTACT.PHP">CONTACT</a></li>
+                    <li><a href="offremploi.php">OFFRES D'EMPLOI</a></li>
+                    <li><a href="ABOUT.php">À PROPOS</a></li>
+                </ul>
+                </div>
+         </div>
+
+        
+                                    <!-- Home -->
+         <section class="home">
+         <h4>Une expérience unique</h4>
+         <h1>MAROC APPARTEMENT</h1> 
+         <button class="arrow" onclick="window.location.href='#build'">
+         <img src="https://cdn-icons-png.flaticon.com/512/271/271210.png" alt="Arrow Down" width="50" height="50">
+         </button>
+         </section>
+                                    <!-- build -->
+         <section class="build" id="build">
+            <div>
+                <h1> Bienvenue chez AlOmrane Immobilier !</h1>
+                <p>Nous construisons des maisons de qualité, adaptées à vos besoins et à votre style. Grâce à notre expertise et à l'utilisation de matériaux durables, nous réalisons des habitations solides et esthétiques. De la conception à la livraison, notre équipe vous accompagne pour faire de votre projet une réussite.. </p>
+                <button class="btn_style section_btn">Contact us now !</button>
+            </div>
+            <img src="https://imgur.com/ohWOlI5.jpg" alt="">
+            </section>
+                                     <!-- Gallery -->
+             <section class="gallery">
+             <h2>WE BUILD HOUSES TOO! </h2>
+             <div class="gallery_images">
+       
+             <button class="gallery_img" onclick="location.href='page-ouarzazate.html'">
+                <img src="https://www.alomrane.gov.ma/var/alomrane/storage/images/media/media-de-chaque-filiale/meknes/produits/al-yassamine-logements/12205948-1-fre-FR/AL-YASSAMINE-LOGEMENTS.jpg" alt="Ouarzazate">
+                <div class="content">OUARZAZATE</div>
+            </button>
+            
+            <button class="gallery_img" onclick="location.href='page-tinghir.html'">
+                <img src="https://www.alomrane.gov.ma/var/alomrane/storage/images/media/media-de-chaque-filiale/meknes/produits/al-majd-logements/12206005-1-fre-FR/AL-MAJD-LOGEMENTS.jpg" alt="tinghir">
+                <div class="content">TINGHIR</div>
+            </button>
+            
+            <button class="gallery_img" onclick="location.href='page-midtelt.html'">
+                <img src="https://imgur.com/jzuX6rk.jpg" alt="midelt">
+                <div class="content">MIDELT</div>
+            </button>
+            
+            <button class="gallery_img" onclick="location.href='page-errachidia.html'">
+                <img src="https://imgur.com/jzuX6rk.jpg" alt="errachidia">
+                <div class="content">ERRACHIDIA</div>
+            </button>
+            
+            <button class="gallery_img" onclick="location.href='page-zagora.html'">
+                <img src="https://imgur.com/jzuX6rk.jpg" alt="zagora">
+                <div class="content">ZAGORA</div>
+            </button>
+    </div>
+    </section>    
+                                <!-- Script ionicons -->
+     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+     <style>
+         * {
+            margin: 0;
+            padding: 0;
+        }
+
+    .home {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color:transparent;
+        color: #fff;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        height: 90vh;
+    }
+    .home h4 {
+        font-size: 15px; /* Augmentation de la taille */
+        font-weight: bold;
+    }
+
+    .home h1 {
+        font-size: 30px; /* Augmentation de la taille */
+        font-weight: bold;
+    }
+
+    .small-logo {
+        width: 65px;  /* Ajuste la taille */
+        height: auto;
+        position: absolute;
+        top: 20px;  /* Positionne au-dessus du texte */
+        left: 10px;
+    }
+      
+    .arrow {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        transition: transform 0.3s ease-in-out;   
+    }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+    scroll-behavior: smooth;
+}
+    .arrow img {
+        width: 50px;  
+        height: 50px;
+        filter: invert(1); 
+    }
+   
+    .arrow:active {
+        transform: translateX(-50%) scale(1.2); /* Effet de zoom au clic */
+    }
+    .main {
+            width: 100%;
+            background:url('https://www.alomrane.gov.ma/var/alomrane/storage/images/media/media-de-chaque-filiale/meknes/produits/al-yassamine-logements/12205948-1-fre-FR/AL-YASSAMINE-LOGEMENTS.jpg') ;
+            background-position: center;
+            background-size: cover;
+            height: 100vh;
+        }
+
+    .navbar {
+            width: 1200px;
+            height: 80px;
+            margin:auto;
+            
+        }
+
+    .icon {
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+
+    .logo {
+            color: rgb(244, 15, 15);
+            font-size: 30px;
+            font-family: Arial;
+            padding-left: 10px;
+            float: left;
+            padding-top: 10px;
+            margin-top: 25px;
+        }
+
+    .menu {
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+
+    ul {
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+    ul li {
+            list-style: none;
+            margin-left: 62px;
+            margin-top: 27px;
+            font-size: 14px;
+        }
+
+    ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-family: Arial;
+            font-weight: bold;
+            transition: 0.4s ease-in-out;
+    }
+
+    ul li a:hover {
+            color: #FF0000;
+    }
+    /* Section Build */
+.build {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+.build div {
+    width: 50%;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.build h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.build p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.build img {
+    width: 40%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section_btn {
+    background-color: #e63946;
+    color: #fff;
+    padding: 12px 25px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.section_btn:hover {
+    background-color: #d62839;
+}
+
+/* Section Gallery */
+.gallery {
+    background-color: #222;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery h2 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.gallery_images {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery_img {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.gallery_img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery_img:hover img {
+    transform: scale(1.1);
+}
+
+.gallery_img .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.gallery_img:hover .content {
+    opacity: 1;
+}
+
+      
+       
+
+        </style>
+</body>
+
+</html>

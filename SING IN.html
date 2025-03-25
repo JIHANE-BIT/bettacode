@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">AlOmrane</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="ABOUT.php">ABOUT</a></li>
+                    <li><a href="#">SERVICES</a></li>
+                    <li><a href="#">POSITIONS</a></li>
+                    <li class="button-link 0">
+                        <a class="btn-v2 btn-green-v2" href="tel:0801001516" title="0801001516" target="_self">0801001516
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div> 
+        <div class="content">
+            <h1>Find Jobs & <br><span> Build</span> <br> Your Future</h1><br></br>
+            <p class="par">Looking for a job that makes a difference and boosts your career? This is where it starts!</p>
+
+                <button class="cn"><a href="projet.php">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
+
+                    <p class="link">Don't have an account<br>
+                    <a href="projet.php">Sign up </a> here</a></p>
+                    <p class="liw">log in with</p>
+
+                    <div class="icons">
+                        <a href="https://www.facebook.com/GroupeALOmraneGAO"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="https://www.instagram.com/alomrane.mre?igsh=MWh5ZnQwZ2JkYnB0cA=="><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://x.com/groupealomrane&ved=2ahUKEwiEmrKM1_eLAxU9TqQEHZY9FKoQFnoECBQQAQ&usg=AOvVaw0fFpL3xTXlLDEdEPGBcdG2"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="https://www.alomrane.gov.ma/?fbclid=PAY2xjawI3ndBleHRuA2FlbQIxMQABprpiu6vokopV6c-i7uu49sYV7B0fcGd2olsQCgW83FzHgOPUrdlvTCeUvg_aem_WYUSAsadiyiqiF4VO2cnNQ"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="mailto:contact@alomrane.ma"><ion-icon name="mail"></ion-icon></a>
+                       
+                    </div>
+
+                </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100%;
+    background: linear-gradient(to top, rgb(0, 0, 0)50%,rgb(0, 0, 0)50%);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color:#FF0000;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+    margin-top: 5px
+}
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover{
+    color:#FF0000;
+}
+
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background: #FF0000;
+    border: 2px solid#FF0000 ;
+    margin-top: 13px;
+    color: #fff;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #FFFFFF;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 9%;
+    letter-spacing: 2px;
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: #c90a0a;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+    
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease;
+}
+
+.cn:hover{
+    background-color: #fff;
+}
+
+.content span{
+    color: #ff0000;
+    font-size: 65px
+}
+
+.form{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%);
+    position: absolute;
+    top: -20px;
+    left: 870px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: rgb(238, 238, 238);
+    font-size: 22px;
+    background-color: #008000;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.form input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #008000;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: #fff;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #008000;
+    transition: 0.4s ease;
+}
+.btnn:hover{
+    background: #fff;
+    color: rgb(1, 248, 22);
+}
+.btnn a{
+    text-decoration: none;
+    color: #008000;
+    font-weight: bold;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff0000;
+}
+.liw{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #fff;
+    font-size: 30px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff0000;
+}
+</style>
+</body>
+</html>
